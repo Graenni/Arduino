@@ -1,0 +1,26 @@
+# Custom board:
+#	TvB LoRaWAN Node Rev.1
+
+##############################################################
+TvBLoRaWANNodeRev1.name=TvB LoRaWAN Node Rev.1 (1284p, 8 MHz)
+
+TvBLoRaWANNodeRev1.upload.tool=avrdude
+TvBLoRaWANNodeRev1.upload.protocol=arduino
+TvBLoRaWANNodeRev1.upload.maximum_size=130048
+TvBLoRaWANNodeRev1.upload.maximum_data_size=16384
+TvBLoRaWANNodeRev1.upload.speed=57600
+
+TvBLoRaWANNodeRev1.bootloader.tool=arduino:avrdude
+TvBLoRaWANNodeRev1.bootloader.low_fuses=0xFF
+TvBLoRaWANNodeRev1.bootloader.high_fuses=0xD6
+TvBLoRaWANNodeRev1.bootloader.extended_fuses=0xFD
+TvBLoRaWANNodeRev1.bootloader.file=TvBWirelessNode1284p\TvBLoRaWANNodeRev1_bootloader_blink.hex
+
+#TvBLoRaWANNodeRev1.bootloader.unlock_bits=0x3F
+#TvBLoRaWANNodeRev1.bootloader.lock_bits=0x2F
+
+TvBLoRaWANNodeRev1.build.mcu=atmega1284p
+TvBLoRaWANNodeRev1.build.f_cpu=8000000L
+TvBLoRaWANNodeRev1.build.core=arduino:arduino
+TvBLoRaWANNodeRev1.build.variant=TvBLoRaWANNodeRev1
+TvBLoRaWANNodeRev1.build.board=AVR_TVBLORAWANNODEREV1
